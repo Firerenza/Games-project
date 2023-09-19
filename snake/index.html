@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Snake Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <h1>Play Snake</h1>
 
-    <!-- Code here -->
+    <div id="game-container">
+        <canvas id="game-board" width="1000" height="1000"></canvas>
+        <div id="score">Score: <span id="score-value">0</span></div>
+        <div id="high-score">High Score: <span id="high-score-value">0</span></div>
+        <div id="game-over">
+            <p>Game Over</p>
+            <!-- <p>Your Score: <span id="final-score">0</span></p> -->
+            <button id="restart-button">Restart</button>
+        </div>
+        <button id="start-button">Start Game</button>
 
 
     <script type= "text/javascript" src="main.js"></script>
 </body>
 </html>
+
+
