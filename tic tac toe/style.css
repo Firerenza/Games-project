@@ -1,16 +1,34 @@
-.cell {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    font-size: 40px;
-    text-align: center;
-    border: 1px solid black;
-    margin: -1px 0 0 -1px;
-    cursor: pointer;
+body {
+    background-color: azure;
 }
 
-.row:after {
-    content: "";
-    display: block;
-    clear: both;
+#board {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    height: 612px;
+    width: 612px; 
+}
+
+.cell {
+    border: solid black;
+    height: 200px;
+    width: 200px;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#restart-button-container {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
 }
