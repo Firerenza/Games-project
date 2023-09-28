@@ -1,31 +1,104 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* Nav bar */
 
 
-/* nav{
-    background-color: rgb(223, 243, 236);
-    padding: 15px;
-    width: 100px;
-    height: auto;
-    border: 2px solid black;
+
+/* Apply a background color and set font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    min-height: 100%;
+    width: 100%;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1, header p {
+    padding-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+li a{
+    padding: 10px;
+    color: whitesmoke;
+}
+
+.searchBar{
+    padding: 0 20px 20px 20px;
+}
+
+li img {
     float: left;
-} */
-
-
-body{
-    background-color: rgb(255, 255, 255);
 }
 
 
-body section{
-    padding: 15px;
-    background-color: rgb(223, 243, 236);
-    margin: 10px;
-    border: 2px solid #000000;
-    height: 80px;
-    width: 80px;
-    float: left;
-    transition: transform 1s; /*Animation */
+/* Style the games section */
+#games {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    transition: transform 2s; /*Animation */
 }
 
-body section:hover {
+section article:hover{
     transform: scale(1.1);
+}
+
+/* Style each game article */
+.game {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.game h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.game p {
+    font-size: 16px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: bottom;
+    width: 100%;
+}
+
+/* Style images within game articles */
+.game img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
